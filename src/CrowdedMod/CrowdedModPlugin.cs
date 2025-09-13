@@ -12,7 +12,6 @@ namespace CrowdedMod;
 [BepInAutoPlugin("xyz.crowdedmods.crowdedmod")]
 [BepInProcess("Among Us.exe")]
 [BepInDependency(ReactorPlugin.Id)]
-[ReactorModFlags(ModFlags.RequireOnAllClients)]
 [BepInDependency("gg.reactor.debugger", BepInDependency.DependencyFlags.SoftDependency)]
 public partial class CrowdedModPlugin : BasePlugin
 {
