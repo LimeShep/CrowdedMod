@@ -25,7 +25,7 @@ public class MeetingHudPagingBehaviour : AbstractPagingBehaviour
     {
         base.Update();
 
-        if (meetingHud.state is MeetingHud.VoteStates.Animating or MeetingHud.VoteStates.Proceeding ||
+        if (meetingHud.state is MeetingHud.MeetingStates.Animating or MeetingHud.MeetingStates.Proceeding ||
             meetingHud.TimerText.text.Contains($" ({PageIndex + 1}/{MaxPageIndex + 1})"))
             return;
 
